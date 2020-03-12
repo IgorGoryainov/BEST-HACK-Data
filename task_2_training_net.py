@@ -8,7 +8,7 @@ from keras.optimizers import Adagrad
 from keras.optimizers import Adadelta
 from keras.constraints import max_norm
 import matplotlib.pyplot as plt
-from data_process import get_random_data, get_data_train, get_norm_data
+from task_2_data_process import get_random_data, get_data_train, get_norm_data
 
 X, Y, NAMES, train_indices = get_data_train()
 
