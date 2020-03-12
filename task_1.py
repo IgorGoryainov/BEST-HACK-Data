@@ -71,7 +71,7 @@ first_model = Kcal_Net()
 loss = torch.nn.L1Loss()
 optimizer = torch.optim.Adam(first_model.parameters(), lr = 0.0001)
 batch_size = 20
-for epoch in range(3000):
+for epoch in range(500):
     order = np.random.permutation(len(X1_train))
     for start_index in range(0, len(X1_train), batch_size):
         optimizer.zero_grad()
