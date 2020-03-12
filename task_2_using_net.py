@@ -5,7 +5,7 @@ from keras.models import Sequential
 from keras.layers import Dense, Dropout
 from keras.constraints import max_norm
 from keras.models import load_model
-from data_process import get_data_train, get_data_test, get_norm_data
+from task_2_data_process import get_data_train, get_data_test, get_norm_data
 
 df = pd.read_csv("NAMES.csv")
 NAMES = df.values
